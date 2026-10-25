@@ -1,65 +1,71 @@
 {
   "active": true,
-  "hostname": "ghrunner-7",
+  "hostname": "ghrunner-8",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
     "disk_free_gb": 81.7,
-    "cpu_threads": 4,
-    "ram_gb": 16.0
+    "ram_gb": 16.0,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "ryzn",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-25T02:15:20Z",
-  "expires_at": "2026-10-25T07:57:20Z",
+  "started_at": "2026-10-25T07:54:54Z",
+  "expires_at": "2026-10-25T13:36:54Z",
   "duration_menit": 342,
-  "run_id": "40153717106",
+  "run_id": "40174545372",
   "run_attempt": "1",
-  "run_number": "7",
-  "run_url": "https://github.com/pradanadana424-maker/XyRDP/actions/runs/40153717106",
+  "run_number": "8",
+  "run_url": "https://github.com/pradanadana424-maker/XyRDP/actions/runs/40174545372",
   "mode": "bersih+win10",
+  "persist": {
+    "restored": true,
+    "files": 4,
+    "profile": "C:\\Users\\ryzn",
+    "source": "xyrdp-state.7z.enc"
+  },
   "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "microphone": "rdp_capture_enabled"
   },
   "games": {
-    "roblox": {
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
-      "status": "ready-antivm"
+    "ets2": {
+      "status": "ready",
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
+    },
+    "blender": {
+      "status": "ready",
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
     },
     "minecraft_java": {
       "opengl46": false,
-      "official_exe": true,
       "tlauncher_jar": true,
       "status": "ready",
-      "prismlauncher": true
-    },
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
-      "status": "ready"
+      "prismlauncher": true,
+      "official_exe": true
     },
     "fivem": {
-      "sound": true,
-      "status": true
+      "status": true,
+      "sound": true
     },
-    "ets2": {
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
-      "status": "ready"
+    "roblox": {
+      "status": "ready-antivm",
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
     },
     "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
-      "status": "ready"
+      "status": "ready",
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
     }
   },
   "tools_hub": {
+    "auto_start": true,
     "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "installed": true,
-    "auto_start": true
+    "installed": true
   },
   "xydesk": {
     "host": "ok",
@@ -79,21 +85,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "mode": "tailscale",
     "tunnel": {
-      "port": 3389,
-      "address": "100.101.27.39:3389",
+      "selftest": "ok",
+      "address": "100.117.43.2:3389",
       "outside": "tailscale",
-      "status": "ok",
-      "host": "100.101.27.39",
-      "selftest": "ok"
+      "host": "100.117.43.2",
+      "port": 3389,
+      "status": "ok"
     },
     "tailscale": {
-      "hostname": "ghrunner-7",
+      "magicdns": "ghrunner-8.taile4d39f.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "ghrunner-7.taile4d39f.ts.net.",
-      "status": "ok",
-      "ip": "100.101.27.39"
-    },
-    "mode": "tailscale"
+      "hostname": "ghrunner-8",
+      "ip": "100.117.43.2",
+      "status": "ok"
+    }
   }
 }
