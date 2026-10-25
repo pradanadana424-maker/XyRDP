@@ -1,71 +1,71 @@
 {
   "active": true,
-  "hostname": "ghrunner-8",
+  "hostname": "ghrunner-9",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 81.7,
+    "cpu_threads": 4,
     "ram_gb": 16.0,
-    "cpu_threads": 4
+    "disk_free_gb": 78.8
   },
   "rdp_port": 3389,
   "rdp_user": "ryzn",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-25T07:54:54Z",
-  "expires_at": "2026-10-25T13:36:54Z",
+  "started_at": "2026-10-25T13:34:40Z",
+  "expires_at": "2026-10-25T19:16:40Z",
   "duration_menit": 342,
-  "run_id": "40174545372",
+  "run_id": "40198191212",
   "run_attempt": "1",
-  "run_number": "8",
-  "run_url": "https://github.com/pradanadana424-maker/XyRDP/actions/runs/40174545372",
+  "run_number": "9",
+  "run_url": "https://github.com/pradanadana424-maker/XyRDP/actions/runs/40198191212",
   "mode": "bersih+win10",
   "persist": {
-    "restored": true,
-    "files": 4,
     "profile": "C:\\Users\\ryzn",
-    "source": "xyrdp-state.7z.enc"
+    "restored": true,
+    "source": "xyrdp-state.7z.enc",
+    "files": 4
   },
   "media": {
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "audio_output": "rdp_playback_enabled",
+    "microphone": "rdp_capture_enabled",
     "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled"
+    "audio_output": "rdp_playback_enabled"
   },
   "games": {
     "ets2": {
       "status": "ready",
       "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
     },
-    "blender": {
-      "status": "ready",
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
-    },
-    "minecraft_java": {
-      "opengl46": false,
-      "tlauncher_jar": true,
-      "status": "ready",
-      "prismlauncher": true,
-      "official_exe": true
+    "roblox": {
+      "status": "ready-antivm",
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
     },
     "fivem": {
       "status": true,
       "sound": true
     },
-    "roblox": {
-      "status": "ready-antivm",
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
-    },
     "memu": {
       "status": "ready",
       "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
+    },
+    "blender": {
+      "status": "ready",
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
+    },
+    "minecraft_java": {
+      "prismlauncher": true,
+      "tlauncher_jar": true,
+      "status": "ready",
+      "official_exe": true,
+      "opengl46": false
     }
   },
   "tools_hub": {
+    "installed": true,
     "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "installed": true
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "xydesk": {
     "host": "ok",
@@ -86,20 +86,20 @@
   },
   "akses": {
     "mode": "tailscale",
-    "tunnel": {
-      "selftest": "ok",
-      "address": "100.117.43.2:3389",
-      "outside": "tailscale",
-      "host": "100.117.43.2",
-      "port": 3389,
-      "status": "ok"
-    },
     "tailscale": {
-      "magicdns": "ghrunner-8.taile4d39f.ts.net.",
+      "status": "ok",
+      "magicdns": "ghrunner-9.taile4d39f.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "ghrunner-8",
-      "ip": "100.117.43.2",
-      "status": "ok"
+      "hostname": "ghrunner-9",
+      "ip": "100.99.13.99"
+    },
+    "tunnel": {
+      "status": "ok",
+      "selftest": "ok",
+      "port": 3389,
+      "address": "100.99.13.99:3389",
+      "host": "100.99.13.99",
+      "outside": "tailscale"
     }
   }
 }
