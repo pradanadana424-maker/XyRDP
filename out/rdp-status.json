@@ -1,71 +1,71 @@
 {
   "active": true,
-  "hostname": "ghrunner-11",
+  "hostname": "ghrunner-12",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 78.8,
+    "ram_gb": 16.0,
     "cpu_threads": 4,
-    "ram_gb": 16.0
+    "disk_free_gb": 78.8
   },
   "rdp_port": 3389,
   "rdp_user": "ryzn",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-26T00:56:00Z",
-  "expires_at": "2026-10-26T06:38:00Z",
+  "started_at": "2026-10-26T06:36:20Z",
+  "expires_at": "2026-10-26T12:18:20Z",
   "duration_menit": 342,
-  "run_id": "40251658596",
+  "run_id": "40280744731",
   "run_attempt": "1",
-  "run_number": "11",
-  "run_url": "https://github.com/pradanadana424-maker/XyRDP/actions/runs/40251658596",
+  "run_number": "12",
+  "run_url": "https://github.com/pradanadana424-maker/XyRDP/actions/runs/40280744731",
   "mode": "bersih+win10",
   "persist": {
-    "source": "xyrdp-state.7z.enc",
     "restored": true,
-    "profile": "C:\\Users\\ryzn",
-    "files": 4
+    "files": 4,
+    "source": "xyrdp-state.7z.enc",
+    "profile": "C:\\Users\\ryzn"
   },
   "media": {
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "audio_output": "rdp_playback_enabled",
     "wallpaper": "xyverse_configured_for_user_logon",
     "microphone": "rdp_capture_enabled",
-    "audio_output": "rdp_playback_enabled"
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
   },
   "games": {
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
-      "status": "ready"
-    },
     "ets2": {
       "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
-      "status": "ready"
-    },
-    "minecraft_java": {
-      "opengl46": false,
-      "prismlauncher": true,
-      "tlauncher_jar": true,
-      "official_exe": true,
       "status": "ready"
     },
     "fivem": {
       "sound": true,
       "status": true
     },
+    "roblox": {
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
+      "status": "ready-antivm"
+    },
     "memu": {
       "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
       "status": "ready"
     },
-    "roblox": {
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
-      "status": "ready-antivm"
+    "minecraft_java": {
+      "tlauncher_jar": true,
+      "opengl46": false,
+      "status": "ready",
+      "official_exe": true,
+      "prismlauncher": true
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
+      "status": "ready"
     }
   },
   "tools_hub": {
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
     "auto_start": true,
-    "installed": true
+    "installed": true,
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "xydesk": {
     "host": "ok",
@@ -85,21 +85,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "tunnel": {
-      "selftest": "ok",
-      "port": 3389,
-      "status": "ok",
-      "host": "100.122.27.104",
-      "outside": "tailscale",
-      "address": "100.122.27.104:3389"
-    },
     "mode": "tailscale",
     "tailscale": {
+      "hostname": "ghrunner-12",
       "status": "ok",
+      "magicdns": "ghrunner-12.taile4d39f.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.122.27.104",
-      "magicdns": "ghrunner-11.taile4d39f.ts.net.",
-      "hostname": "ghrunner-11"
+      "ip": "100.79.159.9"
+    },
+    "tunnel": {
+      "port": 3389,
+      "status": "ok",
+      "address": "100.79.159.9:3389",
+      "selftest": "ok",
+      "host": "100.79.159.9",
+      "outside": "tailscale"
     }
   }
 }
